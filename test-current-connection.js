@@ -7,13 +7,12 @@ const serviceAccount = JSON.parse(readFileSync('./service-account-key.json', 'ut
 
 // Initialize Firebase
 const app = initializeApp({
-  apiKey: "AIzaSyCz3tLr-A6R0JRY1Ey2mUMhpGcF4RmnGRs",
-  authDomain: "soullink-96d4b.firebaseapp.com",
-  projectId: "soullink-96d4b",
-  storageBucket: "soullink-96d4b.firebasestorage.app",
-  messagingSenderId: "301226070664",
-  appId: "1:301226070664:web:cc6e3b87d3d19b1dc26669",
-  measurementId: "G-JC8YRWLQHK"
+  apiKey: process.env.VITE_FIREBASE_API_KEY || 'AIzaSyAJBH_PVRcK2va6X_cXuVHTRchMrBvm7HM',
+  authDomain: process.env.VITE_FIREBASE_AUTH_DOMAIN || 'poultrymitra-9221e.firebaseapp.com',
+  projectId: process.env.VITE_FIREBASE_PROJECT_ID || 'poultrymitra-9221e',
+  storageBucket: process.env.VITE_FIREBASE_STORAGE_BUCKET || 'poultrymitra-9221e.firebasestorage.app',
+  messagingSenderId: process.env.VITE_FIREBASE_MESSAGING_SENDER_ID || '577769606246',
+  appId: process.env.VITE_FIREBASE_APP_ID || '1:577769606246:web:eeb6d0e2e23fdc22b0b1a7'
 });
 
 const db = getFirestore(app);

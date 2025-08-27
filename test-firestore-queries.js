@@ -14,13 +14,12 @@ import {
 } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDHqpf9QmGqz0kh6EXHF2qj7T9nBJ8pqMw",
-  authDomain: "soullink-96d4b.firebaseapp.com",
-  projectId: "soullink-96d4b",
-  storageBucket: "soullink-96d4b.firebasestorage.app",
-  messagingSenderId: "509862568816",
-  appId: "1:509862568816:web:5db8e2bea0c5e8b8b6d9de",
-  measurementId: "G-1CMP5FX3H7"
+  apiKey: 'AIzaSyAJBH_PVRcK2va6X_cXuVHTRchMrBvm7HM',
+  authDomain: 'poultrymitra-9221e.firebaseapp.com',
+  projectId: 'poultrymitra-9221e',
+  storageBucket: 'poultrymitra-9221e.firebasestorage.app',
+  messagingSenderId: '577769606246',
+  appId: '1:577769606246:web:eeb6d0e2e23fdc22b0b1a7'
 };
 
 const app = initializeApp(firebaseConfig);

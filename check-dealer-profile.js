@@ -2,12 +2,12 @@ const { initializeApp } = require('firebase/app');
 const { getFirestore, doc, getDoc } = require('firebase/firestore');
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyDgwUjGO_7lWoD5p_WAXE4TM9K7uKtJL5s',
-  authDomain: 'fowl-feed-management.firebaseapp.com',
-  projectId: 'fowl-feed-management',
-  storageBucket: 'fowl-feed-management.appspot.com',
-  messagingSenderId: '234567890123',
-  appId: '1:234567890123:web:abcdef123456'
+  apiKey: 'AIzaSyAJBH_PVRcK2va6X_cXuVHTRchMrBvm7HM',
+  authDomain: 'poultrymitra-9221e.firebaseapp.com',
+  projectId: 'poultrymitra-9221e',
+  storageBucket: 'poultrymitra-9221e.firebasestorage.app',
+  messagingSenderId: '577769606246',
+  appId: '1:577769606246:web:eeb6d0e2e23fdc22b0b1a7'
 };
 
 const app = initializeApp(firebaseConfig);

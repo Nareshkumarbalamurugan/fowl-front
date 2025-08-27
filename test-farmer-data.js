@@ -3,12 +3,12 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBeOhBBxu7aHT4R3RIRB9XwAZNGf5zs-ZQ",
-  authDomain: "fowl-app-fc0b6.firebaseapp.com",
-  projectId: "fowl-app-fc0b6",
-  storageBucket: "fowl-app-fc0b6.firebasestorage.app",
-  messagingSenderId: "119448077735",
-  appId: "1:119448077735:web:b1a18b55f53e1fd5d32449"
+  apiKey: 'AIzaSyAJBH_PVRcK2va6X_cXuVHTRchMrBvm7HM',
+  authDomain: 'poultrymitra-9221e.firebaseapp.com',
+  projectId: 'poultrymitra-9221e',
+  storageBucket: 'poultrymitra-9221e.firebasestorage.app',
+  messagingSenderId: '577769606246',
+  appId: '1:577769606246:web:eeb6d0e2e23fdc22b0b1a7'
 };
 
 const app = initializeApp(firebaseConfig);

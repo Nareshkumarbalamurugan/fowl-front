@@ -3,12 +3,12 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, getDocs, addDoc, query, where } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCoI_BdJqT3bYYUJN9gVLacj8oXyoXeBIE",
-  authDomain: "fowl-app-fc0b6.firebaseapp.com",
-  projectId: "fowl-app-fc0b6",
-  storageBucket: "fowl-app-fc0b6.firebasestorage.app",
-  messagingSenderId: "522165441469",
-  appId: "1:522165441469:web:fd8c7f69b0b33a8d983a56"
+  apiKey: process.env.VITE_FIREBASE_API_KEY || 'AIzaSyAJBH_PVRcK2va6X_cXuVHTRchMrBvm7HM',
+  authDomain: process.env.VITE_FIREBASE_AUTH_DOMAIN || 'poultrymitra-9221e.firebaseapp.com',
+  projectId: process.env.VITE_FIREBASE_PROJECT_ID || 'poultrymitra-9221e',
+  storageBucket: process.env.VITE_FIREBASE_STORAGE_BUCKET || 'poultrymitra-9221e.firebasestorage.app',
+  messagingSenderId: process.env.VITE_FIREBASE_MESSAGING_SENDER_ID || '577769606246',
+  appId: process.env.VITE_FIREBASE_APP_ID || '1:577769606246:web:eeb6d0e2e23fdc22b0b1a7'
 };
 
 const app = initializeApp(firebaseConfig);

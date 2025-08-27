@@ -3,12 +3,12 @@ import { getAuth, createUserWithEmailAndPassword, updateProfile, signInWithEmail
 import { getFirestore, doc, setDoc } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyD3tc1EKESzh4ITdCbM3a5NSlZa4vDnVBY',
-  authDomain: 'soullink-96d4b.firebaseapp.com',
-  projectId: 'soullink-96d4b',
-  storageBucket: 'soullink-96d4b.firebasestorage.app',
-  messagingSenderId: '321937432406',
-  appId: '1:321937432406:web:14469a9f3f45a6315380f7'
+  apiKey: 'AIzaSyAJBH_PVRcK2va6X_cXuVHTRchMrBvm7HM',
+  authDomain: 'poultrymitra-9221e.firebaseapp.com',
+  projectId: 'poultrymitra-9221e',
+  storageBucket: 'poultrymitra-9221e.firebasestorage.app',
+  messagingSenderId: '577769606246',
+  appId: '1:577769606246:web:eeb6d0e2e23fdc22b0b1a7'
 };
 
 const app = initializeApp(firebaseConfig);

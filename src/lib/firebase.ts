@@ -6,12 +6,12 @@ import { getStorage } from 'firebase/storage';
 // Your Firebase configuration
 // Replace these with your actual Firebase config values from environment variables
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "your-api-key",
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "your-auth-domain",
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "your-project-id", 
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "your-storage-bucket",
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "your-messaging-sender-id",
-  appId: import.meta.env.VITE_FIREBASE_APP_ID || "your-app-id"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "AIzaSyAJBH_PVRcK2va6X_cXuVHTRchMrBvm7HM",
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "poultrymitra-9221e.firebaseapp.com",
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "poultrymitra-9221e",
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "poultrymitra-9221e.firebasestorage.app",
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "577769606246",
+  appId: import.meta.env.VITE_FIREBASE_APP_ID || "1:577769606246:web:eeb6d0e2e23fdc22b0b1a7"
 };
 
 // Debug: Log config to ensure environment variables are loaded (remove in production)

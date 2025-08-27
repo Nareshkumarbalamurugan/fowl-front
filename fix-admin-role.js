@@ -2,13 +2,12 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore, doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCyYU5e_5aT4GX8AEQaZqhEY4b1nHF1C3k",
-  authDomain: "soullink-96d4b.firebaseapp.com",
-  projectId: "soullink-96d4b",
-  storageBucket: "soullink-96d4b.firebasestorage.app",
-  messagingSenderId: "899064302308",
-  appId: "1:899064302308:web:3f38dfbbf7b2a3ab0ab74e",
-  measurementId: "G-3ZTSRR95RG"
+  apiKey: process.env.VITE_FIREBASE_API_KEY || 'AIzaSyAJBH_PVRcK2va6X_cXuVHTRchMrBvm7HM',
+  authDomain: process.env.VITE_FIREBASE_AUTH_DOMAIN || 'poultrymitra-9221e.firebaseapp.com',
+  projectId: process.env.VITE_FIREBASE_PROJECT_ID || 'poultrymitra-9221e',
+  storageBucket: process.env.VITE_FIREBASE_STORAGE_BUCKET || 'poultrymitra-9221e.firebasestorage.app',
+  messagingSenderId: process.env.VITE_FIREBASE_MESSAGING_SENDER_ID || '577769606246',
+  appId: process.env.VITE_FIREBASE_APP_ID || '1:577769606246:web:eeb6d0e2e23fdc22b0b1a7'
 };
 
 const app = initializeApp(firebaseConfig);

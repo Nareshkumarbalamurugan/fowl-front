@@ -1,0 +1,42 @@
+# Netlify Deployment Configuration
+
+# Build settings
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+# Environment variables (set these in Netlify dashboard)
+[build.environment]
+  NODE_VERSION = "18"
+
+# Headers for proper MIME types and security
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Content-Type = "text/css"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Content-Type = "application/javascript"
+
+# SPA routing - redirect all routes to index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# API redirects if needed
+[[redirects]]
+  from = "/api/*"
+  to = "https://your-backend-api.com/api/:splat"
+  status = 200
+  force = true

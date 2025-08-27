@@ -14,12 +14,12 @@ try {
 
 // Firebase configuration - using environment variables with fallback values
 const firebaseConfig = {
-  apiKey: process.env.VITE_FIREBASE_API_KEY || "AIzaSyD3tc1EKESzh4ITdCbM3a5NSlZa4vDnVBY",
-  authDomain: process.env.VITE_FIREBASE_AUTH_DOMAIN || "soullink-96d4b.firebaseapp.com",
-  projectId: process.env.VITE_FIREBASE_PROJECT_ID || "soullink-96d4b",
-  storageBucket: process.env.VITE_FIREBASE_STORAGE_BUCKET || "soullink-96d4b.firebasestorage.app",
-  messagingSenderId: process.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "321937432406",
-  appId: process.env.VITE_FIREBASE_APP_ID || "1:321937432406:web:14469a9f3f45a6315380f7"
+  apiKey: process.env.VITE_FIREBASE_API_KEY || 'AIzaSyAJBH_PVRcK2va6X_cXuVHTRchMrBvm7HM',
+  authDomain: process.env.VITE_FIREBASE_AUTH_DOMAIN || 'poultrymitra-9221e.firebaseapp.com',
+  projectId: process.env.VITE_FIREBASE_PROJECT_ID || 'poultrymitra-9221e',
+  storageBucket: process.env.VITE_FIREBASE_STORAGE_BUCKET || 'poultrymitra-9221e.firebasestorage.app',
+  messagingSenderId: process.env.VITE_FIREBASE_MESSAGING_SENDER_ID || '577769606246',
+  appId: process.env.VITE_FIREBASE_APP_ID || '1:577769606246:web:eeb6d0e2e23fdc22b0b1a7'
 };
 
 // Print current configuration
